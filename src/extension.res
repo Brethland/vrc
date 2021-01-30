@@ -4,7 +4,7 @@ let activate = context => {
   Js.log("Congratulations, your extension \"vrc\" is now active!")
 
   let disposable = Vscode.Commands.registerCommand(
-    "extension.sayHello", () => {
+    "vrc.sayHello", () => {
         Vscode.Window.showInformationMessage("Hello, world!")
     }
   )

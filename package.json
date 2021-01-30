@@ -16,7 +16,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "vrc.helloWorld",
+        "command": "vrc.sayHello",
         "title": "Hello World"
       }
     ]
@@ -24,7 +24,7 @@
   "scripts": {
     "clean": "npx bsb -clean-world",
     "build": "npx bsb -clean-world && npx bsb -make-world && webpack --mode development",
-    "dev": "npm run build && webpack --mode development --watch & npx less-watch-compiler style/ dist/",
+    "dev": "npm run build && webpack --mode development --watch",
     "vscode:prepublish": "npx bsb -make-world && webpack --mode production",
     "test": "node lib/js/test/runTest.bs.js"
   },
