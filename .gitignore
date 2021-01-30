@@ -1,0 +1,12 @@
+# .vscode
+# .vscode-test
+# !.vscode/launch.json
+.merlin
+.DS_Store
+.bsb.lock
+
+out
+dist
+node_modules
+*.vsix
+/lib/bs/
